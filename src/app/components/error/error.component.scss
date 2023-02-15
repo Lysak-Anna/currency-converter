@@ -1,0 +1,18 @@
+.error-component {
+  padding: 20px 10px 10px 10px;
+  position: absolute;
+  height: 80px;
+  width: 100%;
+  background-color: red;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  @media screen and (max-width: 480px) {
+    width: 480px;
+  }
+  &__message {
+    font-size: 20px;
+    font-weight: 500;
+    color: #082340;
+  }
+}

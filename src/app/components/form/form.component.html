@@ -1,0 +1,49 @@
+<section class="currency-convertor">
+  <form [formGroup]="form" class="currency-convertor__form">
+    <p class="currency-convertor__currency-title">
+      {{ this.selectedCurrencyFrom }}
+    </p>
+    <select
+      formControlName="currencyFrom"
+      (change)="changeSelectedCurrencyFrom($event)"
+    >
+      <option selected>UAH</option>
+      <option *ngFor="let currency of this.list" value="{{ currency }}">
+        {{ currency }}
+      </option>
+    </select>
+
+    <label>
+      <div *ngIf="form.get('amountFrom').invalid" class="error">
+        invalid number
+      </div>
+      <input
+        formControlName="amountFrom"
+        value="{{ this.form.value.amountFrom }}"
+        (ngModelChange)="getAmountFrom()"
+      />
+    </label>
+    <p class="currency-convertor__currency-title">
+      {{ this.selectedCurrencyTo }}
+    </p>
+    <select
+      formControlName="currencyTo"
+      (change)="changeSelectedCurrencyTo($event)"
+    >
+      <option selected>USD</option>
+      <option *ngFor="let currency of this.list" value="{{ currency }}">
+        {{ currency }}
+      </option>
+    </select>
+    <label>
+      <div *ngIf="form.get('amountTo').invalid" class="error">
+        invalid number
+      </div>
+      <input
+        formControlName="amountTo"
+        value="{{ this.form.value.amountTo }}"
+        (ngModelChange)="getAmountTo()"
+      />
+    </label>
+  </form>
+</section>

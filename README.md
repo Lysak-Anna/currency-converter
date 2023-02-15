@@ -25,3 +25,7 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Currency API
+
+In this project uses API with free based plan which allows only 100 requests per day. If you get an error you need to change API_KEY in currency.service.ts file.

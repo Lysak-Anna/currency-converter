@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  height: 100px;
+  border-bottom: 1px solid #a8a9ad;
+  justify-content: center;
+}
+.currencies {
+  display: flex;
+  align-items: center;
+  &__value {
+    margin: auto 8px;
+    color: #082340;
+    font-weight: 500;
+  }
+}
