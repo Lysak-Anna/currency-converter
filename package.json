@@ -1,6 +1,7 @@
 {
   "name": "currency-exchange",
   "version": "0.0.0",
+  "homepage": "https://lysak-anna.github.io/currency-converter/",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
